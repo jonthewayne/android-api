@@ -1,6 +1,8 @@
 NAME=square-android-api
 VERSION=SNAPSHOT
 
+NAME=$NAME-$VERSION
+
 # Clear and recreate build directory.
 rm -r build
 mkdir -p build/classes
