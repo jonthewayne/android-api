@@ -21,7 +21,7 @@ Usage
 
 See the [Square for Android API documentation](http://labs.squareup.com/android-api/javadoc/com/squareup/android/package-summary.html). Start with the [`Square`](http://labs.squareup.com/android-api/javadoc/com/squareup/android/Square.html) class.
 
-The current version of Square supports only one line item. Future versions of Square may support may; the API is designed with this in mind.
+The current version of Square supports only one line item. Future versions of Square may support more; the API is designed with this in mind.
 
 Example
 -------
