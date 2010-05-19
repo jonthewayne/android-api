@@ -20,6 +20,7 @@ Licensed under the <a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache \
 License</a>, Version 2.0.</font>"
 
 javadoc -protected -bottom "$FOOTER" \
+	-header "$TITLE" \
     	-doctitle "$TITLE" \
 	-classpath external/android.jar \
         -sourcepath src -d build/javadoc com.squareup.android
