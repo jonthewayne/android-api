@@ -55,3 +55,9 @@ Mailing List
 ------------
 
 To get help and otherwise discuss the Square for Android API, please join our [mailing list](http://groups.google.com/group/square-android-api), square-android-api@googlegroups.com.
+
+License
+-------
+
+This project is licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
