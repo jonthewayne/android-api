@@ -1,5 +1,5 @@
 NAME=square-android-api
-VERSION=SNAPSHOT
+VERSION=0.9
 
 NAME=$NAME-$VERSION
 
@@ -9,10 +9,11 @@ mkdir -p build/classes
 mkdir -p build/dist
 
 # Compile classes.
-javac -g -classpath external/android.jar -d build/classes `find src -name *.java`
+javac -g -classpath external/android.jar -d build/classes \
+    -target 5 `find src -name *.java`
 
 # Generate Javadocs.
-TITLE="Square for Android API v0.9"
+TITLE="Square for Android API v${VERSION}"
 
 FOOTER="<font size='-1'>Copyright (C) 2010 <a href='https://squareup.com/'>\
 Square, Inc.</a> \
@@ -34,4 +35,5 @@ jar cfM build/dist/$NAME.jar -C build/classes .
 
 jar cfM build/$NAME.zip -C build/dist .
 
-cp build/dist/$NAME.jar examples/twocents/libs
+rm examples/twocents/libs/*
+cp build/dist/$NAME.jar examples/twocents/libs/
